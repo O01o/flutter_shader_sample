@@ -4,14 +4,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_shaders/flutter_shaders.dart';
 
-class HogeScreen extends StatefulWidget {
-  const HogeScreen({super.key});
+class CellularScreen extends StatefulWidget {
+  const CellularScreen({super.key});
 
   @override
-  State<HogeScreen> createState() => _HogeScreenState();
+  State<CellularScreen> createState() => _CellularScreenState();
 }
 
-class _HogeScreenState extends State<HogeScreen> {
+class _CellularScreenState extends State<CellularScreen> {
   
   Stream<double> timeCounter() async* {
     double time = 0;

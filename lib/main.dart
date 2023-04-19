@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_shader_sample/widgets/screens/hoge_screen.dart';
+import 'package:flutter_shader_sample/widgets/screens/cellular_screen.dart';
+import 'package:flutter_shader_sample/widgets/screens/delaunay_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HogeScreen(),
+      initialRoute: "/delaunay",
+      routes: {
+        "/cellular": (context) => const CellularScreen(),
+        "/delaunay": (context) => const DelaunayScreen(),
+      },
     );
   }
 }
